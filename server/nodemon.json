@@ -1,0 +1,26 @@
+{
+  "watch": ["src", "server.js"],
+  "ext": "js,json",
+  "ignore": [
+    "node_modules/**",
+    "logs/**",
+    "*.log",
+    "dist/**",
+    ".env",
+    "*.pkl",
+    "temp/**",
+    ".vscode/**",
+    "*.json.gz",
+    "coverage/**",
+    ".git/**",
+    ".DS_Store"
+  ],
+  "restartable": "rs",
+  "delay": 2500,
+  "events": {
+    "restart": "echo '\nRestarting...\n'"
+  },
+  "env": {
+    "NODE_ENV": "development"
+  }
+}
